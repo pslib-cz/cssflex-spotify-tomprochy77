@@ -1,0 +1,88 @@
+/* CSS DOKUMENT K ÚPRAVĚ */
+.page {
+
+}
+
+.page__header {
+
+}
+
+@media screen and (min-width: 768px) {
+    .page__content {
+
+    }
+    .search-list {
+        /* width: 40%; */
+    }
+    .playlist {
+        /* vyplnit prostor */
+        
+    }
+}
+
+.search-list__header {
+
+}
+.search-list__content, .playlist__content {
+
+}
+
+/* track-widget = komponenta položky playlistu  */
+.track-widget {
+    height: 4em;
+}
+
+.track-widget__thumbnail {
+
+}
+
+.track-widget__description {
+
+}
+
+.track-widget__footer {
+
+}
+
+.track-widget--selected {
+
+}
+
+.track-widget--selected::before {
+
+}
+
+
+/* bar = obsah footer webu */
+.bar {
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+@media screen and (min-width: 1440px) {
+    .bar {
+        gap: 10%;
+    }
+}
+
+.bar__player {
+
+}
+
+.player-controls {
+
+}
+
+.player-progress {
+
+}
+
+.player-progress__line {
+    position: relative;
+    height: 0.25em;
+    background-color: var(--gray, gray);
+    border-radius: 0.25em;
+}
+
+.bar__controls {
+
+}
