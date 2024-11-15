@@ -118,5 +118,6 @@ h2 {
 
 .bar__controls {
     display: flex;
+    justify-content: center;
     gap: 1em;
 }
