@@ -1,35 +1,42 @@
 /* CSS DOKUMENT K ÚPRAVĚ */
 .page {
-
+    padding: 1em;
 }
 
 .page__header {
-
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
     .page__content {
-
+       
     }
     .search-list {
-        /* width: 40%; */
+        width: 40;
     }
     .playlist {
         /* vyplnit prostor */
-        
     }
 }
 
 .search-list__header {
-
+    display: flex;
+    align-items: baseline;
+    
 }
 .search-list__content, .playlist__content {
-
+    display: flex;
+    flex-direction: column;
+    gap: .5em
 }
 
 /* track-widget = komponenta položky playlistu  */
 .track-widget {
+    display: flex;
     height: 4em;
+    align-items: center;
+    gap: 1em;
 }
 
 .track-widget__thumbnail {
@@ -37,19 +44,28 @@
 }
 
 .track-widget__description {
-
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    flex-grow: 1;
 }
 
 .track-widget__footer {
-
+    display: flex;
+    gap: .5em;
+    align-items: center;
 }
 
 .track-widget--selected {
-
+    order: -1;
 }
 
 .track-widget--selected::before {
-
+    content: "";
+    display: block;
+    width: 4px;
+    height: 40px;
+    background-color: var(--spotify);
 }
 
 
@@ -57,6 +73,10 @@
 .bar {
     font-size: 0.9em;
     margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 @media screen and (min-width: 1440px) {
     .bar {
@@ -69,7 +89,9 @@
 }
 
 .player-controls {
-
+    display: flex;
+    gap: 1em;
+    align-items: center;
 }
 
 .player-progress {
