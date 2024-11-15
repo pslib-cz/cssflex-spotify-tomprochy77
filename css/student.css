@@ -88,7 +88,10 @@ h2 {
 }
 
 .bar__player {
-    
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .player-controls {
@@ -102,6 +105,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 1em;
+
 }
 
 .player-progress__line {
@@ -109,6 +113,7 @@ h2 {
     height: 0.25em;
     background-color: var(--gray, gray);
     border-radius: 0.25em;
+    flex-grow: 1;
 }
 
 .bar__controls {
