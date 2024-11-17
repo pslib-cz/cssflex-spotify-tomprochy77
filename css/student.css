@@ -17,16 +17,14 @@
     }
     .playlist {
         /* vyplnit prostor */
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
 .search-list__header {
     display: flex;
-    align-items: baseline;
-}
-
-h2 {
-    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .search-list__content, .playlist__content {
@@ -39,7 +37,6 @@ h2 {
 .track-widget {
     display: flex;
     height: 4em;
-    align-items: center;
     gap: 1em;
 }
 
