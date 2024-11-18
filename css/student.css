@@ -10,24 +10,28 @@
 
 @media screen and (min-width: 768px) {
     .page__content {
-       
+        display: flex;
+        gap: 2em;
+        justify-content: center;
     }
     .search-list {
-        width: 40;
+       width: 40em;
     }
     .playlist {
         /* vyplnit prostor */
-        display: flex;
-        justify-content: flex-end;
+    }
+    .bar{
+        flex-direction: row;
     }
 }
 
-.search-list__header {
+.search-list__header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.search-list__content, .playlist__content {
+.search-list__content, .playlist__content{
     display: flex;
     flex-direction: column;
     gap: .5em
@@ -75,7 +79,7 @@
     font-size: 0.9em;
     margin-top: 2em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 @media screen and (min-width: 1440px) {
@@ -89,6 +93,7 @@
     align-self: stretch;
     flex-direction: column;
     gap: 1em;
+    flex-grow: 1;
 }
 
 .player-controls {
@@ -97,24 +102,21 @@
     align-items: center;
     justify-content: center;
 }
-
 .player-progress {
     display: flex;
     align-items: center;
     gap: 1em;
-
 }
 
 .player-progress__line {
     position: relative;
-    height: 0.25em;
+    height: .25em;
     background-color: var(--gray, gray);
-    border-radius: 0.25em;
+    border-radius: .25em;
     flex-grow: 1;
 }
 
 .bar__controls {
     display: flex;
-    justify-content: center;
     gap: 1em;
 }
