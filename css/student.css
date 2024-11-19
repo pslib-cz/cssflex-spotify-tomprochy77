@@ -13,7 +13,6 @@
         display: flex;
         gap: 2em;
         justify-content: center;
-        /* margin-bottom: 7em; spatne (nevim jak na to)*/
     }
     .search-list {
        width: 40%;
