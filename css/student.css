@@ -13,12 +13,13 @@
         display: flex;
         gap: 2em;
         justify-content: center;
+        /* margin-bottom: 7em; spatne (nevim jak na to)*/
     }
     .search-list {
-       width: 40em;
+       width: 40%;
     }
     .playlist {
-        /* vyplnit prostor */
+        width: 50%;
     }
     .bar{
         flex-direction: row;
@@ -45,7 +46,7 @@
 }
 
 .track-widget__thumbnail {
-
+    flex-shrink: 0;
 }
 
 .track-widget__description {
@@ -68,6 +69,7 @@
 .track-widget--selected::before {
     content: "";
     display: block;
+    align-self: center;
     width: 4px;
     height: 40px;
     background-color: var(--spotify);
@@ -119,4 +121,11 @@
 .bar__controls {
     display: flex;
     gap: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .bar {
+        flex-direction: column
+        ;
+    }
 }
