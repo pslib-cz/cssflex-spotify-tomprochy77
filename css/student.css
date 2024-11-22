@@ -1,6 +1,6 @@
 /* CSS DOKUMENT K ÚPRAVĚ */
 .page {
-    padding: 1em;
+    padding: 2em;
 }
 
 .page__header {
@@ -42,6 +42,7 @@
     display: flex;
     height: 4em;
     gap: 1em;
+    align-items: center;
 }
 
 .track-widget__thumbnail {
@@ -72,6 +73,7 @@
     width: 4px;
     height: 40px;
     background-color: var(--spotify);
+    flex-shrink: 0;
 }
 
 
@@ -124,7 +126,6 @@
 
 @media screen and (max-width: 767px) {
     .bar {
-        flex-direction: column
-        ;
+        flex-direction: column;
     }
 }
